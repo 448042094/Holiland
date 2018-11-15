@@ -1,0 +1,33 @@
+@import "common/style.scss";
+
+.banner{width: 996px;height: 450px;margin: 0 auto;overflow: hidden;margin-bottom: 10px;position: relative;}
+.banner ul {width: 996px;height: 450px;margin: 0 auto;}
+.banner ul li{width: 996px;height: 450px;display: none;z-index: 0;}
+.banner ul li img{width: 996px;height: 450px;border: none;}
+.banner ul .ac{z-index: 5;}
+.banner ol {position:absolute;bottom:10px;left:46.5%;z-index:999;}
+.banner ol li{border: 1px solid #626262;cursor:pointer;width: 10px;height: 10px;float:left;margin-right:5px;border-radius:50%;}
+.banner ol .ac{background: #626262;}
+.banner a{display: inline-block;position: absolute;width: 37px;height: 39px;top: 50%;opacity: 0.8;margin-top: -37px;background:url(/imgs/bj_4.png);z-index: 999;}
+.banner #goPrev{left: 20px;}
+.banner #goNext{left: 941px;background-position: 0 -40px;}
+.wrap{width: 996px;margin:0 auto;}
+.wrap  .series_3{float: left;width: 325px;margin-left: 10px;overflow: hidden;height: 270px;}
+.wrap .series div:first-child{margin-left: 0px;}
+.wrap  .series_3  .series_top{width: 325px;height: 220px;overflow: hidden;}
+.wrap  .series_3  .series_top img{width: 325px;height: 220px;border: 0px;}
+.wrap  .series_3  .series_down{height: 50px;background: #87d0e3;color: #fff;}
+.wrap  .series_3  .series_down p{height: 27px;line-height: 35px;padding: 0 0 0 15px;}
+.wrap  .series_3  .series_down label{font-size: 12px;padding: 0 0 0 15px;}
+.wrap .video{clear: both;}
+.wrap .video .video_pic{width: 240px;margin: 10px 10px 10px 0;height: 420px;float: left;}
+.wrap .video video{margin: 10px 0px 10px 0px;cursor: pointer;}
+.wrap  .else_3{float: left;width: 325px;margin-left: 10px;height: 280px;margin-bottom: 10px;}
+.wrap .else div:first-child{margin-left: 0px;}
+.wrap  .else_3  .series_top{width: 325px;height: 220px;overflow: hidden;}
+.wrap  .else_3  .series_top img{width: 325px;height: 220px;border: 0px;}
+.wrap  .else_3  .series_down{height: 50px;background: #87d0e3;color: #fff;}
+.wrap  .else_3  .series_down p{height: 27px;line-height: 35px;padding: 0 0 0 15px;}
+.wrap  .else_3  .series_down label{font-size: 12px;padding: 0 0 0 15px;}
+.wrap .series_top img{transition:all .7s;}
+.wrap .series_top:hover img{transform: scale(1.1,1.1);}

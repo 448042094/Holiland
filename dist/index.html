@@ -7,8 +7,91 @@
 </head>
 <body>
 	<header></header>
+	<!--轮播图-->
+	<div class="banner">
+		<ul>
+			<li class="ac" style="display: block;"><img src="/imgs/banner1.jpg" alt="" /></li>
+			<li><img src="/imgs/banner2.jpg" alt="" /></li>
+			<li><img src="/imgs/banner3.jpg" alt="" /></li>
+			<li><img src="/imgs/banner4.jpg" alt="" /></li>
+		</ul>
+		<a href="javascript:;" id="goPrev"></a>
+		<a href="javascript:;" id="goNext"></a>
+		<ol>
+			<li class="ac"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<!--中间部分-->
+	<div class="wrap">
+		<!--各种系列-->
+		<div class="series">
+			<div class="series_3">
+				<a href="/html/list.html">
+					<div class="series_top">
+						<img src="/imgs/1456992198036601631.jpg"/>
+					</div>
+					<div class="series_down">
+						<p>经典系列</p>
+						<label>CLASSIC SERIES</label>
+					</div>
+				</a>
+			</div>
+			<div class="series_3">
+				<a href="/html/list.html">
+					<div class="series_top">
+						<img src="/imgs/1457139452033531016.jpg"/>
+					</div>
+					<div class="series_down">
+						<p>法式系列</p>
+						<label>FRENCH SERIES</label>
+					</div>
+				</a>
+			</div>
+			<div class="series_3">
+				<a href="/html/list.html">
+					<div class="series_top">
+						<img src="/imgs/1448515955834600789.jpg"/>
+					</div>
+					<div class="series_down">
+						<p>冰淇淋系列</p>
+						<label>GELATO SERIES</label>
+					</div>
+				</a>
+			</div>
+				
+		</div>
+		
+		<!--视频-->
+		<div class="video">
+			<div class="video_pic">
+				<img src="/imgs/1452628219877109028.jpg"/>
+			</div>
+			<video width="745" height="420" poster="https://img.alicdn.com/imgextra/i2/2455221099/TB2ZMW8hHZnBKNjSZFGXXbt3FXa_!!2455221099.jpg">
+				<source src="http://cloud.video.taobao.com//play/u/2455221099/p/1/e/6/t/1/50071310842.mp4" type="video/mp4"></source>
+			</video>	
+		</div>
+		<!--其他东西-->
+		<div class="else"></div>
+		<script type="text/html" id="index_template">
+			{{each list prod}}
+				<div class="else_3">
+					<a href="/html/list.html">
+						<div class="series_top">
+							<img src="{{prod.img}}"/>
+						</div>
+						<div class="series_down">
+							<p>{{prod.title}}</p>
+							<label>{{prod.desc}}</label>
+						</div>
+					</a>
+				</div>
+			{{/each}}
+		</script>
+	</div>
 	
-	<div>haha</div>
 
 	<footer></footer>
 	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/index.js"></script>

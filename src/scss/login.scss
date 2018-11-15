@@ -1,0 +1,17 @@
+@import "common/style.scss";
+
+.login_box{width: 996px;margin: 0 auto;text-align: center;}
+.login_box .login_tit{margin: 10px auto 0;overflow: hidden;font-size: 16px;line-height: 30px;margin-bottom: 10px;height: 30px;}
+.login_box .login_tit .tit_{display: inline-block;float: left;width: 45%;border-top: 1px dashed #d5d5d5;margin-top: 14px;}
+.login_box .login_tit .tit_text{width: 10%;color: #909090;font-weight: bold;border: none;display: inline-block;float: left;}
+.login_box .login_body{width: 996px;margin: 0 auto 20px;padding: 45px 0 55px;overflow: hidden;}
+.login_box .login_body .login_k{width: 310px;margin: 0 auto;background: #ededed;height: 40px;margin-bottom: 10px;line-height: 40px;position: relative;}
+.login_box .login_body .login_k dt{float: left;width: 50px;border-right: 5px solid #fff;text-align: center;padding:0 5px 0 10px;font-size: 14px;height: auto;line-height: 40px;color: #626262;}
+.login_box .login_body .login_k dd input{float: left;display: inline-block;height: 38px;line-height: 38px;width: 210px;padding-left: 10px;font-size: 14px;border: 1px solid #ededed;color: #626262;border: none;background: #ededed;}
+.login_box .login_body .login_k dd a{float: left;padding-left: 8px;height: 36px;line-height: 40px;display: inline-block;color: #626262;}
+.login_box .login_body .login_k dd .login_password{width: 140px;}
+.login_box .login_body .login_btnBox{width: 310px; margin: 0 auto;overflow: hidden;}
+.login_box .login_body .login_btnBox a{float: left;height: 40px;line-height: 40px;text-align: center;}
+.login_box .login_body .login_btnBox .login_btn{width: 195px;background: #87d0e3;color: #fff;font-size: 16px;font-weight: bold;}
+.login_box .login_body .login_btnBox .reg_btn{width: 105px;margin-left: 10px;background: #ededed;color: #626262;}
+.login_box .login_form .login_k  span{font-size: 12px;width:200px;text-align: center;background: #EDEDED;color: red;display: inline-block;position: absolute;right: -250px;height: 40px;line-height: 40px;display: none;}

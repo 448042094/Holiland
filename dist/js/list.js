@@ -1,0 +1,1 @@
+require(["config"],function(){require(["jquery","template","header","footer"],function(r,o){function t(){this.renderList()}t.prototype={constructor:t,renderList:function(){r.ajax({url:"http://rap2api.taobao.org/app/mock/87267/example/110",success:function(t){var e=o("list_template",{list:t.res_body.list});r(".list_body").html(e)}})}},new t})});

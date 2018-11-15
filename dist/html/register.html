@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册界面</title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+	</head>
+	<body>
+		<header></header>
+		
+		<!--中间部分-->
+		<div class="register_box">
+			<div class="register_tit">
+				<span class="tit_"></span>
+				<span class="tit_text">用户注册</span>
+				<span class="tit_"></span>
+			</div>
+			<div class="register_Integral">
+				<i></i>
+				注册赠送积分：100
+			</div>
+			<div class="register_box_form">
+				<form method="post" class="re_form" >
+					<dl class="login_k">
+						<dt >手机号</dt>
+						<dd>
+							<input type="text" name="phone" id="phone" />
+							<span id="er_Ph">请输入注册手机号码!</span>
+						</dd>
+						
+					</dl>
+					<dl>
+						<dt>密 码</dt>
+						<dd>
+							<input type="password" name="password" id="password" />
+							<span id="er_Pa">密码必须输入6-20位字符!</span>							
+						</dd>
+					</dl>
+					<dl>
+						<dt>确认密码</dt>
+						<dd>
+							<input type="password" name="repassword" id="repassword" />
+							<span id="er_rePa">请再次输入密码!</span>	
+						</dd>
+					</dl>
+					<div class="register_terms">
+						<input type="checkbox" id="r_check"/>
+						<a href="javascript:;">我已阅读并接受“服务条款”</a>
+					</div>
+					<div class="register_btn">
+						<a href="javascript:;" type="json" callback="Submit">注册</a>
+					</div>					
+				</form>
+			</div>
+		</div>
+		
+		<footer></footer>
+		<script src="/libs/require/require.js" data-main="/js/register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

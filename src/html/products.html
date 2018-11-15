@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="/css/products.css"/>
+		<script src="/libs/require/require.js" type="text/javascript" data-main="/js/products.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<!--中间部分-->
+		<div class="products_box"></div>
+		<script type="text/html" id="products_template">
+			{{each list prod}}
+			<div>
+				<div class="box_l">
+					<span id="prod_id" style="display: none;">{{prod.id}}</span>
+					<img id="prod_img" src="{{prod.zoom_img}}" data-zoom-image="{{prod.zoom_img}}" />
+				</div>
+				<div class="box_r">
+					<img src="{{prod.r_img}}" class="r_topImg"/>
+					<h2 id="prod_price">￥{{prod.price}}</h2>
+					<span class="r_name">
+						<h2 class="r_cakename" id="prod_title">{{prod.title}}</h2>
+						<p>{{prod.desc}}</p>
+					</span>
+					<form action="javascript:;">
+						<div class="form_box">
+							<dl>
+								<dt>规格</dt>
+								<dd>
+									<span>
+										<b>请选择</b>
+										<i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="form_btn">
+								<a href="javascript:;">收藏</a>
+							</div>
+							<dl>
+								<dt>餐具</dt>
+								<dd>
+									<span>
+										<b>请选择(免费)</b>
+										<i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="form_btn btn_add">
+								<a href="javascript:;">加入购物车</a>
+							</div>
+							<dl>
+								<dt>数量</dt>
+								<dd class="pro_number">
+									<button>-</button>
+									<input type="text" name="number" id="" value="1" />
+									<button>+</button>
+								</dd>
+							</dl>
+							<div class="form_btn btn_buy">
+								<a href="/html/cart.html">立即购买</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="pro_zoom"></div>
+			</div>
+			{{/each}}
+		</script>
+		
+		<footer></footer>
+	</body>
+</html>
